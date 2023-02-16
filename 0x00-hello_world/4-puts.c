@@ -1,12 +1,6 @@
-/*
- * file: 4-puts.c
- * By: Blessings Moyo
- */
 #include <stdio.h>
 /**
- * main:write a program that prints exactly with proper grammar,
- * but the outcome is a piece of art,, followed by a new line.
- *
+ * main:write a program that printswith puts function
  * Return:0(Success)
  */
 int main(void)
