@@ -1,3 +1,7 @@
+/**
+ *Programming is like building a multilingual puzzle
+ */
+
 #include <stdio.h>
 /**
  * main:write a program that printswith puts function
