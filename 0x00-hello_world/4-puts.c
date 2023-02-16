@@ -1,5 +1,6 @@
 /**
- *Programming is like building a multilingual puzzle
+ *File: 4-puts.c
+ *Auth: Blessings Moyo
  */
 
 #include <stdio.h>
