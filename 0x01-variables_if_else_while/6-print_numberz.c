@@ -15,10 +15,10 @@
 */
 int main(void)
 {
-	char ch = '0';
+	int a;
 
-	for (ch = 0; ch < 10; ch++)
-		putchar(ch);
+	for (a = 0; a < 10; a++)
+		putchar((a%10) + '0');
 
 	putchar('\n');
 
