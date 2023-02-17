@@ -2,11 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* File: Positive or negative
+/* *
+ * File: Positive or negative
  * Auth: Blessings Moyo
  * */
 
-/* Main: Positive or negative output
+/* 
+ * Main: Positive or negative output
  * Return (0)
  * */
 int main(void)
@@ -18,9 +20,9 @@ int main(void)
 	if (n < 0) 
 		printf("%d is negative\n", n);
 	else if (n == 0)
-		printf( "%d\n is zero", n);
+		printf( "%d is zero\n", n);
 			else if (n > 0 )
-				printf("%d\n is positive", n);
+				printf("%d is positive\n", n);
 	
 	/* your code goes there */
 	return (0);
