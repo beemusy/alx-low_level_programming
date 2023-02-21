@@ -1,4 +1,4 @@
-*
+/*
  * File: 9-times_table.c
  * Auth: Blessings Moyo
  */
