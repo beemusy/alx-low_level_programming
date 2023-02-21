@@ -14,7 +14,7 @@
 
 int _islower(int c)
 
-/*funtrion: islower*/
+/*function: islower*/
 
 {
 	if (c >= 97 && c <= 122)
