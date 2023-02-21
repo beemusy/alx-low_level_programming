@@ -7,10 +7,12 @@
 
 
 /**
-  *Write a function that checks for lowercase character.
+  * Write a function that checks for lowercase character.
   * Returns 1 if c is lowercase
   * Return 0 for anything else
   */
+
+/* Function _islower */
 
 int _islower(int c)
 
