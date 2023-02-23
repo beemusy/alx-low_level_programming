@@ -41,20 +41,3 @@ void print_remaining_days(int month, int day, int year)
 	}
 }
 
-	{
-		for (; n >= 98; n--)
-		{
-			if (n == 98)
-			{
-				printf("%d", n);
-				printf("\n");
-				break;
-			}
-			else
-			{
-				printf("%d, ", n);
-			}
-		}
-	}
-}
-
