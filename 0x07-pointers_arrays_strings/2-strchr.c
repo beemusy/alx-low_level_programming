@@ -6,13 +6,14 @@
 #include <stddef.h>
 
 /**
- * _strchr - fills memory with a constant byte
+ * _strchr - locates a character in a string
  *
  * @s: pointer to a string
  * @c: character to search for
  * 
  *
  * Return: a pointer to the first occurance of the character
+ * Return: NULL if the character is not found
  */
 
 char *_strchr(char *s, char c)
