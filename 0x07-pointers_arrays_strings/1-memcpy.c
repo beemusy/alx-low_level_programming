@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte
+ * _memcpy - copies memory area
  *
  * @src: source to copy memory
  * @dest: destination of memory copy
