@@ -15,7 +15,7 @@
  * @accept, or NULL if no such byte is found.
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	int s = 0;
