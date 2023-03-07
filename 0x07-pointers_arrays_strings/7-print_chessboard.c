@@ -6,11 +6,9 @@
 #include <stdlib.h>
 
 /**
- * print_chessboard.c - print the chessboard
+ * print_chessboard - print the chessboard
  *
  * @a: pointer to array to be printed
- * 
- *
  * Return: (0)
  */
 
