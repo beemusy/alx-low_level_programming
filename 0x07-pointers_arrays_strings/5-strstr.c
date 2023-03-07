@@ -6,14 +6,14 @@
 #include <stdlib.h>
 
 /**
- * _strstr.c - searchs a string for any of a set of bytes
- *
- * @s: the string to search
- * @accept: the bytes to search for
- *
- * Return: a pointer to the byte in @s that matches one of the bytes in
- * @accept, or NULL if no such byte is found.
- */
+* _strstr - locates a substring
+*
+* @haystack: the longer string to search
+* @needle: the substring to search for
+*
+* Return: a pointer to the beginning of the located substring, or NULL if
+* the substring is not found.
+*/
 
 char *_strstr(char *haystack, char *needle)
 {
