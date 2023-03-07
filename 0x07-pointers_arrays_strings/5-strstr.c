@@ -32,5 +32,5 @@ char *_strpbrk(char *s, char *accept)
 		else
 			return (haystack);
 	}
-	return (NULL);;
+	return (NULL);
 }
