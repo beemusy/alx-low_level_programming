@@ -13,7 +13,6 @@
  * @argv: array containing the program line arguments
  *
  * Return: 1 when there is an error
- * Return: Always 0.
  */
 
 int main(int argc, char **argv)
