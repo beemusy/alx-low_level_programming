@@ -11,6 +11,7 @@
  *
  * @argc: number of command line arguments
  * @argv: array containing the program line arguments
+ *
  * Return: 1 when there is an error
  * Return: Always 0.
  */
