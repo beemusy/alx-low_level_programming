@@ -23,23 +23,20 @@ int main(int argc, char *argv[])
 	{
 	printf("0\n");
 	}
-	else
+
+	for (i = 1; i < argc; i++)
 	{
+		if (*argv[i] < '0' || *argv[i] > '9')
+		{
+			printf("Error\n");
+			return (1);
+		}
+	}
+
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] < '0' || *argv[i] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
+			sum = sum + atoi(argv[i]);
 		}
-
-	}
-	if (*argv[i] >= '0' || *argv[i] <= '9')
-	{
-		sum = sum + atoi(argv[i]);
-		printf("%d\n", sum);
-	}
-
+	printf("%d\n", sum);
 	return (0);
 }
