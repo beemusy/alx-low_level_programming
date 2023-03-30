@@ -3,9 +3,9 @@
  * Auth: Blessings Moyo
  */
 
-#include <stdlib.h>
-#include <time.h>
+#include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_list - prints all elements of a list_t list
@@ -14,7 +14,7 @@
  * Return: The number of nodes
  */
 
-size_t print_list(const list_t *h);
+size_t print_list(const list_t *h)
 {
 	size_t s = 0;
 
@@ -23,5 +23,5 @@ size_t print_list(const list_t *h);
 		printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
 	}
-	Return (s);
+	return (s);
 }
