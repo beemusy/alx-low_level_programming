@@ -18,6 +18,8 @@ size_t print_listint(const listint_t *h)
 	const listint_t *pointer = NULL;
 	int count = 0;
 
+	pointer = malloc(sizeof(listint_t));
+
 	if (h == NULL)
 	{
 		printf("Linked List is empty");
