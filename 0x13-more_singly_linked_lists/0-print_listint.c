@@ -15,23 +15,14 @@
 */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *pointer = NULL;
-	int count = 0;
+	size_t count;
 
-	pointer = malloc(sizeof(listint_t));
+	count = 0;
 
-	if (h == NULL)
+	while (h != NULL)
 	{
-		printf("Linked List is empty");
-		return (0);
-	}
-
-	pointer = h;
-
-	while (pointer != NULL)
-	{
-		printf("%d\n", pointer->n);
-		pointer = pointer->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		count++;
 	}
 	return (count);
