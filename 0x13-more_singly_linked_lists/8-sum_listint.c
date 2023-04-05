@@ -22,13 +22,10 @@ int sum_listint(listint_t *head)
 		return (0);
 	}
 
-	else
+	while (head)
 	{
-		while (head)
-		{
-			head = head->next;
-			sum = sum + head->n;
-		}
+		sum = sum + head->n;
+		head = head->next;
 	}
 	return (sum);
 }
