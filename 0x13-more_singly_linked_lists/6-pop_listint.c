@@ -18,8 +18,6 @@ int pop_listint(listint_t **head)
 	int hdata;
 	listint_t *newNode;
 
-	newNode = malloc(sizeof(listint_t));
-
 	if (*head == NULL)
 	{
 		return (0);
