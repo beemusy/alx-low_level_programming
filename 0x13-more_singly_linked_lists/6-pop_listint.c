@@ -22,11 +22,12 @@ int pop_listint(listint_t **head)
 
 	if (*head == NULL)
 	{
-		return 0;
+		return (0);
 	}
 
 	hdata = (*head)->n;
 	newNode = (*head)->next;
-	head = NULL;
+	free(*head);
+	*head = newNode;
 	return (hdata);
 }
