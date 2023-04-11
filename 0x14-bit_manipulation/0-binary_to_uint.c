@@ -25,8 +25,12 @@ unsigned int binary_to_uint(const char *b)
 
 	conv_num = 0;
 
-	for (i = 0; b[i] == '0' || b[i] == '1'; i++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
+		if (b[i] != '0' && b[i] != '1')
+		{
+			return (0);
+		}
 		conv_num <<= 1;
 		conv_num += b[i] - '0';
 	}
