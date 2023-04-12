@@ -32,5 +32,6 @@ int create_file(const char *filename, char *text_content)
 
 	fputs(text_content, newfile);
 
+	fclose(newfile);
 	return (0);
 }
