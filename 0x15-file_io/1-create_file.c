@@ -16,14 +16,15 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	FILE *newfile;
+	int newfile;
 	int len;
-	
-	newfile = fopen("filename.txt", "rw-------");
+	/*int writefile;*/
 
-	if (newfile != NULL)
+	newfile = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+
+	if (newfile == -1)
 	{
-		return (1);
+		return (-1);
 	}
 
 	if (filename == NULL)
@@ -35,10 +36,10 @@ int create_file(const char *filename, char *text_content)
 	{
 		for ( len = 0; text_content[len] != '\0'; len++)
 		{
-			fputs(text_content, newfile);
+			write(newfile, text_content, len);
 		}
 	}
 
-	fclose(newfile);
+	close(newfile);
 	return (0);
 }
