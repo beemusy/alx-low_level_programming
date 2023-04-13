@@ -17,7 +17,8 @@
 int create_file(const char *filename, char *text_content)
 {
 	FILE *newfile;
-
+	int len;
+	
 	newfile = fopen("filename.txt", "rw-------");
 
 	if (newfile != NULL)
@@ -29,8 +30,14 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-
-	fputs(text_content, newfile);
+	
+	if (text_content != NULL)
+	{
+		for ( len = 0; text_content[len] != '\0'; len++)
+		{
+			fputs(text_content, newfile);
+		}
+	}
 
 	fclose(newfile);
 	return (0);
