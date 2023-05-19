@@ -19,7 +19,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current = *head;
 	dlistint_t *previous = NULL;
-	unsigned int i = 0i;
+	unsigned int i = i;
 
 	while (current != NULL && i < index)
 	{
