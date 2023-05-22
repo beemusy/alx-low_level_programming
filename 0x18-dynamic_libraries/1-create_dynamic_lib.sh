@@ -1,4 +1,6 @@
 #!/bin/bash
 mkdir -p lib
-gcc -c -fPIC *.c
-gcc -shared -o 
+for c_file in $c_files; do
+	gcc -c -fPIC *.c
+done
+gcc -shared -o liball.so *.o
