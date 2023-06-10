@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * create_file - function that creates a file
@@ -17,7 +18,6 @@
 int create_file(const char *filename, char *text_content)
 {
 	int newfile;
-	int len;
 	int writefile;
 
 	newfile = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
@@ -32,17 +32,9 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	if (text_content == NULL)
-	{
-		return (newfile);
-	}
-
 	if (text_content != NULL)
 	{
-		for (len = 0; text_content[len] != '\0'; len++)
-		{
-			writefile = write(newfile, text_content, len);
-		}
+		writefile = write(newfile, text_content, strlen(text_content));
 		if (writefile == -1)
 		{
 			close(newfile);
@@ -53,5 +45,5 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	close(newfile);
-	return (0);
+	return (1);
 }
